@@ -1,0 +1,43 @@
+{
+  "name": "node-api",
+  "version": "0.0.1",
+  "description": "api poc",
+  "main": "index.js",
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "scripts": {
+    "start": "node index",
+    "test": "npm run lint && mocha -R spec",
+    "lint": "jshint index.js lib"
+  },
+  "dependencies": {
+    "bluebird": "^2.9.13",
+    "body-parser": "^1.10.0",
+    "bookshelf": "^0.8.1",
+    "cli-table": "^0.3.1",
+    "cors": "^2.5.2",
+    "endpoints": "^0.9.0",
+    "express": "^4.10.6",
+    "express-routebuilder": "^2.1.0",
+    "fantasy-database": "endpoints/fantasy-database#master",
+    "knex": "^0.8.6",
+    "mysql": "^2.5.4"
+  },
+  "devDependencies": {
+    "jshint": "^2.5.11"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tenzan/node-api.git"
+  },
+  "author": "askar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tenzan/node-api/issues"
+  },
+  "homepage": "https://github.com/tenzan/node-api#readme"
+}
